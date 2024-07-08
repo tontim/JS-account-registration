@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Registration</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <fieldset>
+        <legend>Register your account</legend>
+        <form>
+            <label>Name:
+                <input type="text" name="name" required autofocus>
+            </label>
+            <label>Username:
+                <input type="text" name="username" required>
+            </label>
+            <label>E-mail:
+                <input type="email" name="email" required>
+            </label>
+            <label>Password:
+                <input type="password" name="password" min="8" required>
+            </label>
+            <label>Confirm password:
+                <input type="password" name="confirm-password" min="8" required>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+    <script src="index.js"></script>
+</body>
+</html>
