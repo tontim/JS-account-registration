@@ -10,12 +10,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let valid = true;
 
-        if (passwordValue.length < 8) {
+        if (passwordValue.length >0 && passwordValue.length < 8) {
             password.style.borderColor = 'red';
             valid = false;
         } 
+        else if (passwordValue.length >= 8) {
+            password.style.borderColor = '#50B498';
+        } 
         else {
-            password.style.borderColor = '#893eeb';
+            password.style.borderColor = '';
         }
 
         if (passwordValue !== confirmPasswordValue) {
@@ -23,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             valid = false;
         } 
         else {
-            confirmPassword.style.borderColor = '#893eeb';
+            confirmPassword.style.borderColor = '#50B498';
         }
         submitButton.disabled = !valid;
     }

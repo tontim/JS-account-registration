@@ -5,21 +5,26 @@ body {
 fieldset {
     display:flex;
     justify-content: center;
-    max-width:400px;
+    max-width:300px;
     border-radius:5px;
-    border-color:#ffffff00;
-    background-color: #e3cbff;
+    border-color:#468585;
+    background-image: linear-gradient(180deg, #DEF9C4, #9CDBA6);
+    box-shadow: 5px 5px #468585;
 }
 legend {
     font-size: 1.2rem; 
-    background: #893eeb;
-    color:#FFF;
+    background: #9CDBA6;
+    color:#000;
     border-radius:3px;
     padding:5px;
+    box-shadow: 5px 5px #468585;
+}
+form {
+    margin-top:20px;
 }
 label {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     margin: 5px;
 }
 input[type="text"],
@@ -34,25 +39,22 @@ input[type="password"] {
 input[type="text"]:valid,
 input[type="email"]:valid,
 input[type="password"]:valid {
-    border-color: #893eeb;
+    border-color: #50B498;
 }
-input[type="text"]:invalid,
-input[type="email"]:invalid,
-input[type="password"]:invalid {
-    border-color: rgb(255, 125, 125);
-}
+
 button {
-    width:100px;
-    padding:10px;
-    font-size:1.5rem;
+    width:70px;
+    padding:5px;
+    font-size:1.1rem;
     border-radius:5px;
-    margin-top:5px;
+    margin-top:15px;
+    margin-bottom:15px;
 }
 button:disabled {
-    background-color: #cccccc;
+    background-color: #9CDBA6;
 }
 button:hover:enabled {
     color:#FFF;
-    background-color: #7415f0b6;
+    background-color: #468585;
     border-radius:5px;
 }
